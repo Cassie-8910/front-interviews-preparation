@@ -1,4 +1,4 @@
 # front-interviews-preparation
 前端面试准备
 
-### 数据结构和算法
+### 算法和笔试题
