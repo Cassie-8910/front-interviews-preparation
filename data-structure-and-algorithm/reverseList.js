@@ -5,13 +5,19 @@
  * @returns {*[]}
  */
 function reverseList(head) {
-    let arr = []
-    let start = head
-    while(start) {
-        arr.push(start.val)
-        start = start.next()
+    let list = null;
+    let p = head;
+    let q = null
+    if (p === null) return null
+    while(p.next !== null){
+        q = p.next;
+        p.next = list;
+        list = p;
+        p = q;
     }
-    return arr.reverse()
+    p.next = list;
+    list = p;
+    return list
 }
 
 
