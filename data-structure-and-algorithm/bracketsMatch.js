@@ -19,6 +19,7 @@ function bracketsMatch(s) {
     return !stack.length
 }
 
+
 //优先级匹配 小括号()必须在最里面， [] {}
 // function bracketsMatch1(s) {
 //     let reg = /\(\)|\[\]|\{\}/g
