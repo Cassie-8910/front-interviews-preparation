@@ -1,3 +1,8 @@
+/**
+ * 最长公共子串
+ * @param arr
+ * @returns {string}
+ */
 let longestCommonPrefix = function(arr) {
     if(arr.length) {//判断数组是否为空
         let res = ""; //记录公共前缀
@@ -5,7 +10,7 @@ let longestCommonPrefix = function(arr) {
             let temp = arr[0][i];
             //每个字符串是否都有相同的字符
             if(arr.every(el => {
-                return el.charAt(i) == temp;
+                return el.charAt(i) === temp;
             })) {
                 res += temp; //记录公共前缀
             } else
