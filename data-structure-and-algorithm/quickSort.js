@@ -1,3 +1,8 @@
+/**
+ *  快排
+ * @param arr
+ * @returns {*}
+ */
 function quickSort(arr) {
     if (arr.length <= 1) {
         return arr;

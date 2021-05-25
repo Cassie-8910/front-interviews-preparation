@@ -4,11 +4,11 @@
  */
 function findRepeatNum(arr) {
     let newArr = []
-    console.log(arr.sort().sort((a,b) => {
+    arr.sort().sort((a,b) => {
         if(a===b && !newArr.includes(a)) {
             newArr.push(a)
         }
-    }))
+    })
     return newArr
 }
 
