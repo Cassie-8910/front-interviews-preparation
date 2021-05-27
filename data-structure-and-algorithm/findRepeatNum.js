@@ -4,6 +4,7 @@
  */
 function findRepeatNum(arr) {
     let newArr = []
+    console.log(arr.sort())
     arr.sort().sort((a,b) => {
         if(a===b && !newArr.includes(a)) {
             newArr.push(a)
@@ -12,4 +13,4 @@ function findRepeatNum(arr) {
     return newArr
 }
 
-console.log(findRepeatNum([1,1,2,3,4,5,3,4,7]))
+console.log(findRepeatNum([23,31,45,23,18,20,45,26]))
